@@ -79,7 +79,8 @@ keys.forEach(key => {
   buttonElement.textContent = key
   buttonElement.setAttribute('id', key)
   buttonElement.addEventListener('click', () => handleClick(key))
-  keyboard.append(buttonElement)
+  buttonElement.addEventListener('click', () => handleClick(key))
+  keyboard.append(buttonElementkeyboard.append(buttonElement)
 })
 
 
