@@ -109,7 +109,7 @@ const addLetter = (letter) => {
 }
 
 const deleteLetter = () => {
-    if (currentTile > 0) {
+    if (currentTile > 1) {
         currentTile--
         const tile = document.getElementById('guessRow-' + currentRow + '-tile-' + currentTile)
         tile.textContent = ''
